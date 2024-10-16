@@ -10,6 +10,7 @@
      ... }: {
 	
     packages = [
+        pkgs.git
         pkgs.php83
         pkgs.symfony-cli
         pkgs.php83Packages.composer
