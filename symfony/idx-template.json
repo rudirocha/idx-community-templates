@@ -1,0 +1,52 @@
+{
+    "name": "Symfony",
+    "description": "Symfony Framework template",
+    "params": [
+    {
+      "id": "dir",
+      "name": "App directory",
+      "type": "text",
+      "default": "app",
+      "required": true
+    },
+    {
+      "id": "version",
+      "name": "Symfony Framework version",
+      "type": "text",
+      "default": "lts",
+      "required": true
+    },
+    {
+      "id": "webapp",
+      "name": "Webapp pack",
+      "type": "boolean",
+      "default": "false",
+      "required": true
+    },
+    {
+      "id": "docker",
+      "name": "Docker support",
+      "type": "boolean",
+      "default": "false",
+      "required": true
+    },
+    {
+      "id": "cloud",
+      "name": "Platform.sh support",
+      "type": "boolean",
+      "default": "false",
+      "required": true
+    },
+    {
+      "id": "debug",
+      "name": "Show commands output",
+      "type": "boolean",
+      "default": "false",
+      "required": true
+    }
+  ],
+    "categories": [
+      "Backend"
+    ],
+    "icon": "https://symfony.com/logos/symfony_black_03.svg"
+  }
