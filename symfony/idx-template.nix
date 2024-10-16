@@ -19,8 +19,7 @@
       mkdir composer-home
       export COMPOSER_HOME=./composer-home
 			mkdir "$out"
-      composer create-project laravel/laravel "$out"
-      symfony new --dir="$out"/${dir} --version=${version} ${webapp ? "--webapp" : ""} ${docker ? "--docker" : ""} ${cloud ? "--cloud" : ""} ${debug ? "--debug" : ""}
+      symfony new --dir="$out"/${dir} --version=${version} ${if webapp == true then "--webapp" else ""} ${if docker == true then "--docker" else ""} ${if cloud == true then "--cloud" else ""} ${if debug == true then "--debug" else ""}
 			mkdir -p "$out"/${dir}/.idx
   		cp ${./dev.nix} "$out"/${dir}/.idx/dev.nix
     '';
