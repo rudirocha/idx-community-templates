@@ -5,7 +5,7 @@
     webapp ? false,
     docker ? false,
     cloud ? false,
-    debug ? false
+    debug ? false,
 
      ... }: {
 	
