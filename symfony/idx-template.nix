@@ -17,8 +17,6 @@
     ];
 
     bootstrap = ''
-      mkdir composer-home
-      export COMPOSER_HOME=./composer-home
 			mkdir "$out"
   
       symfony new "$out" --version=${version} ${if webapp == true then "--webapp" else ""} ${if docker == true then "--docker" else ""} ${if cloud == true then "--cloud" else ""} ${if debug == true then "--debug" else ""}
