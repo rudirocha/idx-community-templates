@@ -22,8 +22,6 @@
       enable = true;
       previews = {
         web = {
-            command = ["symfony" "server:start"];
-            manager = "web";
         #   env = {
         #     # Environment variables to set for your server
         #     PORT = "$PORT";
